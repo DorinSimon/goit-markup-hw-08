@@ -1,0 +1,48 @@
+@import "../utils/variables";
+.title-section-background{
+  display: flex;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  url("../images/background.jpg") no-repeat;
+background-size: cover;
+height: 600px;
+align-items: center;
+}
+@import "../utils/variables";
+.title-section {
+      display: flex;
+      flex-direction: column;      
+      align-items: center;
+      gap: $usualSize;
+      align-items: center;
+      
+      &__block {
+            width: 696px;
+            font-weight: 900;
+            font-size: 44px;
+            line-height: 60px;
+            text-align: center;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: $backgroundColorWhite;
+
+          }
+    }
+    
+    
+    
+    .button-request {
+      width: 200px;
+      height: $size2;
+      background: $colorBlue;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      border-radius: $borderRadius;
+      border: $nulSize;
+    }
+    
+    .button-request span {
+      font-weight: $fontWeightTitle;
+      font-size: $size1;
+      line-height: 30px;
+      letter-spacing: 0.06em;
+      color: $backgroundColorWhite;
+    }

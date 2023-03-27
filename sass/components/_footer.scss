@@ -1,0 +1,146 @@
+@import "../utils/variables";
+footer {
+  background-color: $colorGray;
+}
+
+.footer {
+  display: flex;
+  position: relative;
+  gap: $usualMargin;
+  justify-content: center;
+}
+
+.bottom-page {
+  display: flex;
+  flex-direction: column;
+  height: 251px;
+}
+
+.web-link-footer {
+  font-family: $secondFontFamily;
+  font-weight: $fontWeightTitle;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: $letterSpacing1;
+  margin: 60px 0px 28px 0px;
+}
+
+.color-studio-footer,
+.adress__link {
+  color: $backgroundColorWhite;
+}
+
+.adress {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  &__link {
+    font-style: normal;
+    font-size: 14px;
+    line-height: $size1;
+    letter-spacing: $letterSpacing1;
+    color: $colorWhiteGray;
+  }
+  &__contact-link {
+    font-style: normal;
+    font-size: 14px;
+    line-height: $size1;
+    letter-spacing: $letterSpacing1;
+    color: #ffffff99;
+  }
+}
+
+.find {
+  display: flex;
+  flex-direction: column;
+  gap: $size3;
+  justify-content: left;
+  margin: 75px 0px 96px 0px;
+  &__title {
+    font-weight: $fontWeightTitle;
+    font-size: 14px;
+    line-height: $size1;
+    letter-spacing: $letterSpacing1;
+    text-transform: uppercase;
+    color: $backgroundColorWhite;
+  }
+}
+
+.social-media-footer {
+  display: flex;
+  gap: $tenSize;
+}
+
+.social-media--icon-footer {
+  background: rgba(255, 255, 255, 0.1);
+  transition: background, 250ms $transitionTypeCubic;
+}
+
+.icon-color-footer {
+  fill: $colorWhiteGray;
+}
+
+.form-container {
+  display: flex;
+  gap: 12px;
+  &__email {
+    display: flex;
+    flex-direction: column;
+    gap: $size3;
+    margin-top: 72px;
+    font-weight: $fontWeightTitle;
+    font-size: 14px;
+    line-height: $size1;
+    letter-spacing: $letterSpacing1;
+    text-transform: uppercase;
+    color: $backgroundColorWhite;
+
+    &__input {
+      width: 358px;
+      height: $size2;
+      font-weight: $fontWeightSubtittle;
+      font-size: $size1;
+      line-height: $size3;
+      display: flex;
+      align-items: center;
+      letter-spacing: $letterSpacing1;
+      color: rgba(255, 255, 255, 0.6);
+      background: $colorGray;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+      border-radius: $borderRadius;
+      padding: $size1;
+      transition: border 250ms $transitionTypeCubic;
+    }
+    &__input:hover{
+      border: 2px solid rgb(6, 100, 241);
+      cursor: pointer;
+    }
+  }
+}
+
+.subscribe-button {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  width: 200px;
+  height: $size2;
+  margin-left: $nulSize;
+  margin-top: 108px;
+  background: $colorBlue;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: $borderRadius;
+  font-weight: $fontWeightTitle;
+  font-size: $size1;
+  line-height: $usualSize;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  padding-left: 43px;
+  transition: box-shadow 250ms $transitionTypeCubic;
+}
+
+.subscribe-button:hover {
+  cursor: pointer;
+  box-shadow: 4px 6px 8px rgba(248, 6, 6, 0.15);
+}

@@ -1,0 +1,182 @@
+@import "../utils/variables";
+.modal {
+  display: flex;
+  background: $backgroundModal;
+  position: fixed;
+  width: $maximumPercent;
+  height: $maximumPercent;
+  margin-top: $nulSize;
+  z-index: 99;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: opacity 250ms $transitionTypeCubic;
+
+  &__div {
+    position: relative;
+    width: 528px;
+    height: 581px;
+    background: $backgroundColorWhite;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: $borderRadius;
+    z-index: 99;
+    padding: 40px;
+  }
+
+  &__title {
+    font-weight: $fontWeightTitle;
+    font-size: $size3;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: $letterSpacing1;
+    color: $colorBlack;
+  }
+
+  &__button {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    background: $backgroundColorWhite;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+  }
+
+  &__button:hover {
+    border-color: $colorBlue;
+    fill: $colorBlue;
+    cursor: pointer;
+  }
+
+  &__close {
+    background: $backgroundColorWhite;
+    border: none;
+  }
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 12px;
+  &__item {
+    position: relative;
+    display: flex;
+    gap: 4px;
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: $colorGray;
+  }
+
+  &__input:focus + &__svg,
+  &__input:focus,
+  &__textarea:focus {
+    cursor: pointer;
+    border-color: $colorBlue;
+    fill: $colorBlue;
+  }
+
+  &__input {
+    outline: none;
+    width: 448px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 35px;
+    transition: border-color 250ms $transitionTypeCubic;
+    cursor: default;
+  }
+
+  &__svg {
+    position: absolute;
+    top: 30px;
+    left: 15px;
+    transition: fill 250ms $transitionTypeCubic;
+    fill: $colorWeb;
+  }
+
+  &__textarea {
+    outline: none;
+    font-family: $primaryFontFamily;
+    font-weight: $fontWeightSubtittle;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+    padding: 12px 16px 12px $size1;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: $borderRadius;
+    width: 448px;
+    height: 1$size2;
+    resize: none;
+    transition: border-color 250ms $transitionTypeCubic;
+    cursor: default;
+  }
+}
+
+.checkbox-label {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin: 10px 0px 20px 0px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: $letterSpacing1;
+  color: $colorGray;
+
+  &__link {
+    color: $colorBlue;
+  }
+
+  &__input[type="checkbox"] {
+    display: none;
+  }
+
+  &__replace {
+    display: flex;
+    width: $size1;
+    height: 15px;
+    border-radius: 2px;
+    border: 2px solid $colorBlack;
+  }
+
+  &__input[type="checkbox"]:checked + &__replace {
+    width: $size1;
+    height: 15px;
+    background-color: $colorBlue;
+    border-radius: 2px;
+    border: none;
+  }
+}
+
+.submit-button {
+  width: 200px;
+  height: $size2;
+  font-weight: $fontWeightTitle;
+  font-size: $size1;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.06em;
+  color: $backgroundColorWhite;
+  background: $colorBlue;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: $borderRadius;
+  margin: auto;
+}

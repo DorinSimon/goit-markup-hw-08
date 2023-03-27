@@ -1,0 +1,109 @@
+@import "../utils/variables";
+.cards {
+  display: flex;
+  box-sizing: border-box;
+  width: 1200px;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  margin: 94px 0 50px 0;
+  gap: 8px;
+
+  &__style {
+    background-color:$backgroundColorWhite;
+    border: none;
+    border-radius: $borderRadius;
+    transition: background-color, 250ms $transitionTypeCubic;
+
+    &__text {
+      font-weight:$fontWeightLink;
+      font-size: $size1;
+      line-height: 26px;
+      text-align: center;
+      letter-spacing: $letterSpacing1;
+      padding: 6px 22px 6px 22px;
+      color: $colorBlack;
+      transition: color, 250ms $transitionTypeCubic;
+    }
+  }
+
+  &__style:hover {
+    cursor: pointer;
+    background-color: $colorBlue;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: $borderRadius;
+  }
+
+  .button__style:hover > .button__style__text {
+    color: $backgroundColorWhite;
+  }
+}
+
+.cards-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: $usualMargin;
+}
+
+.cards-list li img {
+  width: 370px;
+  height: 294px;
+}
+
+.card-box {
+  background: $backgroundColorWhite;
+  border: 1px solid #eeeeee;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &__img {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+    color: #212121;
+    margin: 20px 0 4px 24px;
+  }
+
+  &__search {
+    font-weight: 400;
+    font-size: $size1;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: #757575;
+    margin-left: 24px;
+  }
+}
+.overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(33, 150, 243, 0.9);
+  height: 294px;
+  width: 370px;
+  position: absolute;
+  transform: translateY(102%);
+  transition: transform 250ms linear;
+}
+
+.card-box:hover .overlay {
+  transform: translateY(0px);
+}
+
+.card-box:hover {
+  cursor: pointer;
+  border: 1px solid #eeeeee;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}

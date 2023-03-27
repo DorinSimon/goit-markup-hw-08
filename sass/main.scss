@@ -1,0 +1,45 @@
+@import "../sass/utils/variables";
+@import "../sass/components/header";
+@import "../sass/components/modal";
+@import "../sass/components/titleBlock";
+@import "../sass/components/skills";
+@import "../sass/components/services";
+@import "../sass/components/team";
+@import "../sass/components/customers";
+@import "../sass/components/footer";
+@import "../sass/components/cards";
+
+body {
+  font-family: $primaryFontFamily;
+  font-style: normal;
+  color: $colorBlack;
+  margin: $nulSize;
+  padding: $nulSize;
+}
+
+h1,
+h2,
+h3,
+ul {
+  padding: $nulSize;
+  margin: $nulSize;
+}
+
+.list {
+  list-style: none;
+}
+
+.unstyled-link {
+  text-decoration: none;
+}
+
+.header-container,
+.title-section,
+.skills-section,
+.services,
+.our-team,
+.customers-section,
+.footer{
+  width: 1200px;
+  margin: 0 auto;
+}

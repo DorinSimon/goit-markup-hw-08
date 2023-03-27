@@ -1,0 +1,42 @@
+@import "../utils/variables";
+
+.skills {
+  display: flex;
+  justify-content: center;
+  gap:$usualSize ;
+  margin-top: 94px;
+  background: $backgroundColorWhite;
+
+  &__title {
+    width: 270px;
+    height: $size1;
+    font-weight: $fontWeightTitle;
+    font-size: 14px;
+    line-height: $size1;
+    letter-spacing: $letterSpacing1;
+    text-transform: uppercase;
+    color: $colorBlack;
+    margin-bottom: $tenSize;
+  }
+
+  &__description {
+    width: 270px;
+    height: 75px;
+    font-weight: $fontWeightSubtittle;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: $letterSpacing1;
+    color:$colorGray;
+  }
+
+  &__icons {
+    display: flex;
+    width: 270px;
+    height: 120px;
+    background: $colorWhiteGray;
+    border-radius: $borderRadius;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: $usualSize;
+  }
+}
