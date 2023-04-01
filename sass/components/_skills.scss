@@ -2,9 +2,7 @@
 
 .skills {
   display: flex;
-  justify-content: center;
   gap:$usualSize ;
-  margin-top: 94px;
   background: $backgroundColorWhite;
 
   &__title {

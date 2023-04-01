@@ -1,17 +1,15 @@
 @import "../utils/variables";
-.our-team {
-  display: flex;
-  height: 648px;
-  flex-direction: column;
+.team-background{
   background: $colorWhiteGray;
-  justify-content: center;
+}
+.our-team {
+  height: 708px;
 }
 .team {
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: $usualSize;
-  margin-bottom: $usualMargin;
 
   &__card {
     background: $backgroundColorWhite;

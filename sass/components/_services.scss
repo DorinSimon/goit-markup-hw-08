@@ -7,16 +7,12 @@
   text-align: center;
   letter-spacing: $letterSpacing1;
   color: $colorBlack;
-  margin-bottom: $size2;
-  margin-top: $usualMargin;
 }
-
 .services-list {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   gap: $usualSize;
-  margin-bottom: $usualMargin ;
+
   &__item {
     position: relative;
   }

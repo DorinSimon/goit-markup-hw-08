@@ -4,13 +4,13 @@
   width: 1200px;
   justify-content: center;
   flex-direction: column;
+  gap:$size2;
   margin: auto;
 }
 
 .button {
   display: flex;
   justify-content: center;
-  margin: 94px 0 50px 0;
   gap: 8px;
 
   &__style {
@@ -48,7 +48,6 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  margin-bottom: $usualMargin;
 }
 
 .cards-list li img {

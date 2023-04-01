@@ -16,6 +16,13 @@ body {
   margin: $nulSize;
   padding: $nulSize;
 }
+.body-container,
+.portofolio-page{
+  display: flex;
+  flex-direction: column;
+  gap: $usualMargin;
+ 
+}
 
 h1,
 h2,
@@ -42,4 +49,13 @@ ul {
 .footer{
   width: 1200px;
   margin: 0 auto;
+}
+.services,
+.our-team,
+.customers-section{
+  display: flex;
+  flex-direction: column;
+  gap: $size2;
+  justify-content: center;
+  align-items: center;
 }
