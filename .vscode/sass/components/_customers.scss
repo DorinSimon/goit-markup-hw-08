@@ -6,15 +6,17 @@
 .customers {
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 60px;
   &__list {
     display: flex;
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid $colorCustomers;
     border-radius: $borderRadius;
     align-items: center;
     justify-content: center;
-    margin-bottom: 94px;
   }
 
   &__icon {
@@ -28,5 +30,19 @@
   }
   .customers__icon:hover {
     fill: $colorBlue;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .customers__list {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .customers {
+    margin-bottom: 94px;
+  }
+  .customers__list {
+    width: 170px;
   }
 }

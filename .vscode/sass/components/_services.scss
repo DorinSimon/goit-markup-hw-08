@@ -1,0 +1,46 @@
+@import "../utils/variables";
+
+.subtitle-section {
+  font-weight: $fontWeightTitle;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: $letterSpacing1;
+  color: $colorBlack;
+}
+.services-list {
+  display: flex;
+  justify-content: center;
+  gap: $usualSize;
+
+  &__item {
+    position: relative;
+  }
+
+  &__type {
+    font-weight: $fontWeightTitle;
+    font-size: 14px;
+    line-height: $size1;
+    text-align: center;
+    letter-spacing: $letterSpacing1;
+    text-transform: uppercase;
+    color: $backgroundColorWhite;
+  }
+
+  &__box {
+    display: flex;
+    position: absolute;
+    top: 224px;
+    width: $maximumPercent;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .hide-section {
+    display: none;
+  }
+}

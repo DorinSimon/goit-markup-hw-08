@@ -1,0 +1,85 @@
+@import "../utils/variables";
+.team-background {
+  background: $colorWhiteGray;
+}
+.our-team {
+  padding: 94px 0;
+}
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  gap: $usualSize;
+
+  &__card {
+    background: $backgroundColorWhite;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    &__person {
+      font-weight: $fontWeightLink;
+      font-size: $size1;
+      line-height: 19px;
+      text-align: center;
+      letter-spacing: $letterSpacing1;
+      margin: 30px 0px 10px 0px;
+    }
+
+    &__function {
+      font-weight: $fontWeightSubtittle;
+      font-size: $size1;
+      line-height: 19px;
+      text-align: center;
+      letter-spacing: $letterSpacing1;
+      color: $colorGray;
+    }
+  }
+}
+.social-media {
+  display: flex;
+  justify-content: center;
+  margin-top: $size1;
+  margin-bottom: $usualSize;
+
+  &__list {
+    display: flex;
+    gap: $tenSize;
+  }
+
+  &__icon {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: $backgroundColorWhite;
+    transition: background-color 250ms $transitionTypeCubic;
+
+    &__color {
+      fill: $colorCustomers;
+      transition: fill 250ms $transitionTypeCubic;
+    }
+
+    &__color:hover,
+    &:hover {
+      fill: $backgroundColorWhite;
+      background: $colorBlue;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team__card img {
+    width: 354px;
+    height: 374px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__card img {
+    width: 270px;
+    height: 260px;
+  }
+}
