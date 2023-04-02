@@ -1,26 +1,27 @@
 @import "../utils/variables";
 .cards {
   display: flex;
-  width: 1200px;
   justify-content: center;
   flex-direction: column;
-  gap:$size2;
+  gap: $size2;
   margin: auto;
 }
 
 .button {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   gap: 8px;
-
+  flex-basis: content;
   &__style {
-    background-color:$backgroundColorWhite;
+    background-color: $colorWhiteGray;
     border: none;
     border-radius: $borderRadius;
     transition: background-color, 250ms $transitionTypeCubic;
+    height: 38px;
+    padding: 0px;
 
     &__text {
-      font-weight:$fontWeightLink;
+      font-weight: $fontWeightLink;
       font-size: $size1;
       line-height: 26px;
       text-align: center;
@@ -50,8 +51,8 @@
   gap: 30px;
 }
 
-.cards-list li img {
-  width: 370px;
+.img__size {
+  width: 450px;
   height: 294px;
 }
 
@@ -89,7 +90,7 @@
   justify-content: center;
   background: rgba(33, 150, 243, 0.9);
   height: 294px;
-  width: 370px;
+  width: 100%;
   position: absolute;
   transform: translateY(102%);
   transition: transform 250ms linear;
@@ -104,4 +105,18 @@
   border: 1px solid #eeeeee;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+@media screen and (min-width: 768px) {
+  .img__size {
+    width: 354px;
+  }
+  .button {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .img__size {
+    width: 370px;
+  }
 }

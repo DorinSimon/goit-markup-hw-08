@@ -2,11 +2,11 @@
 
 .skills {
   display: flex;
-  gap:$usualSize ;
+  flex-wrap: wrap;
+  gap: $usualSize;
   background: $backgroundColorWhite;
 
   &__title {
-    width: 270px;
     height: $size1;
     font-weight: $fontWeightTitle;
     font-size: 14px;
@@ -18,23 +18,31 @@
   }
 
   &__description {
-    width: 270px;
     height: 75px;
     font-weight: $fontWeightSubtittle;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: $letterSpacing1;
-    color:$colorGray;
+    color: $colorGray;
   }
 
   &__icons {
     display: flex;
-    width: 270px;
     height: 120px;
     background: $colorWhiteGray;
     border-radius: $borderRadius;
     align-items: center;
     justify-content: center;
     margin-bottom: $usualSize;
+  }
+}
+@media screen and (min-width: 768px) {
+  .skills__item {
+    flex-basis: calc((100% - 1 * 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .skills__item {
+    flex-basis: calc((100% - 3 * 30px) / 4);
   }
 }

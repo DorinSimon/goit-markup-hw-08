@@ -1,12 +1,13 @@
 @import "../utils/variables";
-.team-background{
+.team-background {
   background: $colorWhiteGray;
 }
 .our-team {
-  height: 708px;
+  padding: 94px 0;
 }
 .team {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   gap: $usualSize;
@@ -58,7 +59,7 @@
     transition: background-color 250ms $transitionTypeCubic;
 
     &__color {
-      fill:$colorCustomers;
+      fill: $colorCustomers;
       transition: fill 250ms $transitionTypeCubic;
     }
 
@@ -67,5 +68,18 @@
       fill: $backgroundColorWhite;
       background: $colorBlue;
     }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team__card img {
+    width: 354px;
+    height: 374px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__card img {
+    width: 270px;
+    height: 260px;
   }
 }
