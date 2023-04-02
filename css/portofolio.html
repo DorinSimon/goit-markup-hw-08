@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Studio Homework Project</title>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+  <!-- <link rel="stylesheet" href="css/style.css" />-->
+  <link rel="stylesheet" href="css/main.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="portofolio-page">
+  <!--header section-->
+  <header>
+    <div class="header-container">
+      <a class="nav__web unstyled-link" href="https://www.edu.goit.global/ro/dashboard" target="_blank"
+        rel="noreferrer noopener"><span class="color-web">Web</span><span class="color-studio-header">Studio</span>
+      </a>
+      <nav class="nav menu">
+        <ul class="navigation-list list">
+          <li class="navigation-list__item "><a class=" navigation-list__item__style unstyled-link"
+              href="index.html">Studio</a></li>
+          <li class="navigation-list__item"><a class="curent-page navigation-list__item__style unstyled-link"
+              href="portofolio.html">Portofolio</a></li>
+          <li class="navigation-list__item"><a class="navigation-list__item__style unstyled-link" href="#">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="contacts list menu">
+        <li class="contacts__item"> <a class="contacts__link unstyled-link " href="mailto:info@devstudio.com"><svg
+              class="contacts__svg" width="16" height="12">
+              <use href="./images/icons.svg#icon-envelope-hover"></use>
+            </svg>info@devstudio.com</a></li>
+        <li class="contacts__item"><a class="contacts__link  unstyled-link" href="tel:+1212-772-4150"><svg
+              class="contacts__svg" width="10" height="16">
+              <use href="./images/icons.svg#icon-Vector"></use>
+            </svg>+1 212-772-4150</a></li>
+      </ul>
+      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg width="24" height="24" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"></path>
+        </svg>
+      </button>
+    </div>
+  </header>
+  <!--main section-->
+  <main>
+    <section class="cards">
+      <ul class="button list">
+        <li><button class="button__style" type="button"><span class="button__style__text">All</span></button>
+        </li>
+        <li><button class="button__style" type="button"><span class="button__style__text">Web-site</span></button></li>
+        <li><button class="button__style" type="button"><span class="button__style__text">Apps</span></button>
+        </li>
+        <li><button class="button__style" type="button"><span class="button__style__text">Design</span></button></li>
+        <li><button class="button__style" type="button"><span class="button__style__text">Marketing</span></button></li>
+      </ul>
+      <ul class="cards-list list">
+        <li class="card-box">
+          <div class="card-box__img">
+            <div class="overlay">
+              <p>text</p>
+            </div>
+            <img class="img__size" src="images/img(1).jpg" alt="Web site image" />
+          </div>
+          <h3 class="card-box__title">Technoduck</h3>
+          <p class="card-box__search">Web-site</p>
+        </li>
+        <li class="card-box">
+          <div class="card-box__img">
+            <div class="overlay">
+              <p>text</p>
+            </div>
+            <img class="img__size" src="images/img(2).jpg" alt="Design image" />
+          </div>
+
+          <h3 class="card-box__title">Poster New Orlean vs Golden Star</h3>
+          <p class="card-box__search">Design</p>
+        </li>
+        <li class="card-box">
+          <div class="card-box__img">
+            <div class="overlay">
+              <p>text</p>
+            </div>
+            <img class="img__size" src="images/img(3).jpg" alt="App image" />
+          </div>
+
+          <h3 class="card-box__title">Seafood Restaurant</h3>
+          <p class="card-box__search">Apps</p>
+        </li>
+        <li class="card-box">
+          <div class="card-box__img">
+            <div class="overlay">
+              <p>text</p>
+            </div>
+            <img class="img__size" src="images/img(4).jpg" alt="Marketing image" />
+          </div>
+
+          <h3 class="card-box__title">Project Prime</h3>
+          <p class="card-box__search">Marketing</p>
+        </li>
+        <li class="card-box">
+          <div class="card-box__img">
+            <div class="overlay">
+              <p>text</p>
+            </div>
+            <img class="img__size" src="images/img(5).jpg" alt="App image" />
+          </div>
+
+          <h3 class="card-box__title">Project Boxes</h3>
+          <p class="card-box__search">Apps</p>
+        </li>
+        <li class="card-box">
+          <div class="card-box__img">
+            <div class="overlay">
+              <p>text</p>
+            </div>
+            <img class="img__size" src="images/img(6).jpg" alt="Web site image" />
+          </div>
+
+          <h3 class="card-box__title">Inspiration has no Borders</h3>
+          <p class="card-box__search">Web-site</p>
+        </li>
+        <li class="card-box">
+          <div class="card-box__img">
+            <div class="overlay">
+              <p>text</p>
+            </div>
+            <img class="img__size" src="images/img(7).jpg" alt="Design image" />
+          </div>
+
+          <h3 class="card-box__title">Limited Edition</h3>
+          <p class="card-box__search">Design</p>
+        </li>
+        <li class="card-box">
+          <div class="card-box__img">
+            <div class="overlay">
+              <p>text</p>
+            </div>
+            <img class="img__size" src="images/img(8).jpg" alt="Marketing image" />
+          </div>
+
+          <h3 class="card-box__title">Project LAB</h3>
+          <p class="card-box__search">Marketing</p>
+        </li>
+        <li class="card-box">
+          <div class="card-box__img">
+            <div class="overlay">
+              <p>text</p>
+            </div>
+            <img class="img__size" src="images/img(9).jpg" alt="App image" />
+          </div>
+
+          <h3 class="card-box__title">Growing Business</h3>
+          <p class="card-box__search">Apps</p>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu">
+      <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+        <path fill-rule="evenodd"
+          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+          clip-rule="evenodd"></path>
+      </svg>
+    </button>
+
+    <ul class="mobile-list list">
+      <li class="mobile-list__item "><a class="unstyled-link" href="index.html">Studio</a>
+      </li>
+      <li class="mobile-list__item"><a class="unstyled-link" href="portofolio.html">Portofolio</a></li>
+      <li class="mobile-list__item"><a class=" unstyled-link" href="#">Contacts</a>
+      </li>
+    </ul>
+
+    <ul class="mobile-contacts list ">
+      <li class="mobile-contacts__item"> <a class=" unstyled-link "
+          href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+      <li class="mobile-contacts__item"><a class=" unstyled-link" href="tel:+1212-772-4150">+1 212-772-4150</a></li>
+    </ul>
+    <ul class="mobile-media list">
+      <li class="mobile-media__item"><a class=" mobile-media__item__link unstyled-link" href="#">Instagram</a><span>
+        </span></li>
+      <li class="mobile-media__item"><a class=" mobile-media__item__link unstyled-link" href="#">Twitter</a><span>
+        </span></li>
+      <li class="mobile-media__item"><a class=" mobile-media__item__link unstyled-link" href="#">Facebook</a><span>
+        </span></li>
+      <li class="mobile-media__item"><a class=" mobile-media__item__link unstyled-link" href="#">Linkedln</a>
+      </li>
+    </ul>
+  </div>
+  <!--footer section-->
+  <footer>
+    <div class="footer">
+      <div class="bottom-page">
+        <a class="web-link-footer unstyled-link " href="https://www.edu.goit.global/ro/dashboard" target="_blank"
+          rel="noreferrer noopener"><span class="color-web">Web</span><span class="color-studio-footer">Studio</span>
+        </a>
+        <address>
+          <ul class="adress list">
+            <li>
+              <a class="adress__link unstyled-link"
+                href="https://www.google.com/maps/place/695+Park+Ave,+New+York,+NY+10065,+Statele+Unite+ale+Americii/@40.7689034,-73.9672143,17z/data=!3m1!4b1!4m5!3m4!1s0x89c258ebe8836e8f:0xa007c44e7c4aa0eb!8m2!3d40.7688994!4d-73.9650256"
+                target="_blank" rel="noreferrer noopener">695 Park Ave, NY 10065, USA
+              </a>
+            </li>
+            <li>
+              <a class="adress__contact-link unstyled-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li><a class="adress__contact-link unstyled-link" href="tel:+1212-772-4150">+1 212-772-4150</a></li>
+          </ul>
+        </address>
+      </div>
+      <div class="find">
+        <h3 class="find__title">FIND US ON</h3>
+        <ul class=" social-media-footer list">
+          <li class="social-media__icon social-media--icon-footer">
+            <a href="#">
+              <svg width="20" height="20" class="icon-color-footer">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-media__icon social-media--icon-footer">
+            <a href="#">
+              <svg class="icon-color-footer" width="20" height="20">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-media__icon social-media--icon-footer">
+            <a href="#">
+              <svg class="icon-color-footer" width="20" height="20">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-media__icon social-media--icon-footer">
+            <a href="#">
+              <svg class="icon-color-footer " width="20" height="20">
+                <use href="./images/icons.svg#icon-linkedin2"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="form-container">
+        <form name="subscribe-form" class="footer-form">
+          <label class="form-container__email">
+            Subscribe to the newsletter
+            <input class="form-container__email__input" type="text" name="E-mail" placeholder="E-mail">
+          </label>
+        </form>
+        <button class="subscribe-button" type="submit">Subscribe <svg width="24" height="24">
+            <use href="./images/icons.svg#icon-icon-send"></use>
+          </svg></button>
+      </div>
+    </div>
+  </footer>
+  <script src="./js/mobile-menu.js"></script>
+</body>
+
+</html>
